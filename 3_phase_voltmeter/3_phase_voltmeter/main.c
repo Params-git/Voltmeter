@@ -53,9 +53,9 @@ int adc_phase(int ch)
 	}
 	
 	adc = Max;
-	itoa(Max, buf, 10);
+	//itoa(Max, buf, 10);
 	
-	_delay_ms(1000);
+	_delay_ms(500);
 	
 	vm = (float)(adc * 0.2763637188); // 283/1024 = 0.2763637188
 	adc = (int)vm;
